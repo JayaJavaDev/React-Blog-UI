@@ -1,10 +1,8 @@
 import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
+import Template from "./components/Template.jsx";
+import All from "./components/All.jsx";
 import FullStack from "./components/Fullstack.jsx";
 import DataScience from "./components/Datascience.jsx";
 import CyberSecurity from "./components/Cybersecurity.jsx";
@@ -17,26 +15,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <Template />,
     children: [
-      {
-        index: true,
-        element: <All />,
-      },
-      {
-        path: "fullstackdev",
-        element: <FullStack />,
-      },
-      {
-        path: "datascience",
-        element: <DataScience />,
-      },
-      {
-        path: "cybersecurity",
-        element: <CyberSecurity />,
-      },
-      {
-        path: "ai",
-        element: <AI />,
-      },
+      { index: true, element: <All /> },
+      { path: "fullstackdev", element: <FullStack /> },
+      { path: "datascience", element: <DataScience /> },
+      { path: "cybersecurity", element: <CyberSecurity /> },
+      { path: "ai", element: <AI /> },
     ],
   },
 ]);
