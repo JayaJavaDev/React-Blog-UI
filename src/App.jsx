@@ -5,12 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Template from "./components/Template";
-import All from "./components/All";
-import FullStack from "./components/Fullstack";
-import DataScience from "./components/Datascience";
-import CyberSecurity from "./components/Cybersecurity";
-import AI from "./components/AI";
+import FullStack from "./components/Fullstack.jsx";
+import DataScience from "./components/Datascience.jsx";
+import CyberSecurity from "./components/Cybersecurity.jsx";
+import AI from "./components/Ai.jsx";
 
 import "./App.css";
 
