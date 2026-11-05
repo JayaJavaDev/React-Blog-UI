@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function BlogCard({ blog }) {
+  const navigate = useNavigate();
+
   return (
     <div className="blog-card">
 
@@ -17,9 +20,12 @@ function BlogCard({ blog }) {
 
         <p>{blog.content}</p>
 
-        <span className="read-more">
+        <button
+          className="read-more"
+          onClick={() => navigate(`/blog/${blog.id}`)}
+        >
           Read More →
-        </span>
+        </button>
       </div>
 
     </div>

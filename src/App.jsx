@@ -7,6 +7,7 @@ import FullStack from "./components/Fullstack.jsx";
 import DataScience from "./components/Datascience.jsx";
 import CyberSecurity from "./components/Cybersecurity.jsx";
 import AI from "./components/Ai.jsx";
+import BlogDetails from "./components/BlogDetails.jsx";
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "datascience", element: <DataScience /> },
       { path: "cybersecurity", element: <CyberSecurity /> },
       { path: "ai", element: <AI /> },
+      { path: "blog/:id", element: <BlogDetails /> },
     ],
   },
 ]);
